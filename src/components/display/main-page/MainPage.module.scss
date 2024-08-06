@@ -1,6 +1,7 @@
 .container {
+	@apply relative;
 	.content {
-		@apply flex mt-[162px] justify-center items-center;
+		@apply flex mt-[102px] justify-center items-center;
 	}
 	.text-block {
 		@apply max-w-[780px] gap-8 flex flex-col text-center items-center;
@@ -12,5 +13,59 @@
 		.text {
 			@apply max-w-[580px] px-2 text-gray-40 text-base font-normal leading-[22.4px];
 		}
+	}
+
+	.bitcoin {
+		position: absolute;
+		width: 120px;
+		aspect-ratio: 1;
+		top: 124px;
+		left: 70px;
+	}
+
+	.litecoin {
+		position: absolute;
+		aspect-ratio: 1;
+		width: 120px;
+		top: 583.7px;
+		left: 154.03px;
+	}
+	.monero {
+		position: absolute;
+		width: 165px;
+		aspect-ratio: 1;
+		top: 160px;
+		right: 125px;
+	}
+
+	.etherium {
+		position: absolute;
+		width: 160px;
+		aspect-ratio: 1;
+		top: 550px;
+		right: 260.7px;
+	}
+
+	.star {
+		position: absolute;
+		width: 61px;
+		height: 60px;
+		top: 241px;
+		left: 190px;
+
+		&:last-child {
+			width: 61px;
+			height: 60px;
+			top: 670px;
+			left: 1356px;
+		}
+	}
+
+	.starMini {
+		position: absolute;
+		width: 54px;
+		height: 46px;
+		top: 126px;
+		right: 130px;
 	}
 }
