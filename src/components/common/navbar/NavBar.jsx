@@ -5,9 +5,9 @@ import logo from '/public/images/Logo.png'
 
 const NavBar = () => {
 	return (
-		<nav>
+		<nav className={styles.nav}>
 			<div className={styles.logo}>
-				<img src={logo} alt='logo' />
+				<img className={styles.image} src={logo} alt='logo' />
 			</div>
 			<ul className={styles.list}>
 				{navBarData.map((el, i) => (
@@ -16,7 +16,7 @@ const NavBar = () => {
 					</li>
 				))}
 			</ul>
-			<div className={styles.action}>
+			<div>
 				<Button label={'Get in Touch'} />
 			</div>
 		</nav>

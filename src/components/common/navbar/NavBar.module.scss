@@ -1,0 +1,16 @@
+.nav {
+	@apply flex items-center h-[100px] justify-between px-[100px];
+
+	.logo {
+		.image {
+			@apply w-[183px] h-[48px];
+		}
+	}
+
+	.list {
+		@apply flex items-center gap-8;
+		.el {
+			@apply text-sm leading-[19.6px] text-[#fff] font-semibold;
+		}
+	}
+}
