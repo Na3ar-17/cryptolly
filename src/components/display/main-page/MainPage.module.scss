@@ -1,0 +1,16 @@
+.container {
+	.content {
+		@apply flex mt-[162px] justify-center items-center;
+	}
+	.text-block {
+		@apply max-w-[780px] gap-8 flex flex-col text-center items-center;
+
+		.heading {
+			@apply font-black text-[#fff] text-[85px] leading-[110.5px];
+		}
+
+		.text {
+			@apply max-w-[580px] px-2 text-gray-40 text-base font-normal leading-[22.4px];
+		}
+	}
+}
