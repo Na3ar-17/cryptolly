@@ -1,12 +1,9 @@
+import MainPage from './components/display/main-page/MainPage'
+
 function App() {
 	return (
 		<>
-			<p className='text-xl'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-				ratione explicabo dolor corrupti voluptatem vitae rerum nesciunt placeat
-				fuga aut, saepe repellat, cupiditate quae fugiat eum quia nihil commodi
-				nulla.
-			</p>
+			<MainPage />
 		</>
 	)
 }

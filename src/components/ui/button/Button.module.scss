@@ -1,0 +1,29 @@
+.button {
+	@apply text-base font-semibold leading-[22.4px] h-[48px] px-[32px] text-center text-gray-10 button-gradient-primary py-[13px] rounded-[10px];
+
+	&.small {
+		@apply min-w-[162px] h-[48px] px-[32px] py-[13px];
+	}
+
+	&.large {
+		@apply min-w-[186px] h-[62px];
+	}
+
+	&.disabled {
+		background: none;
+		@apply bg-gray-60 text-gray-40;
+
+		&:active {
+			background: none;
+			@apply bg-gray-60;
+		}
+	}
+
+	&:focus {
+		@apply button-gradient-secondary;
+	}
+
+	&:active {
+		@apply button-gradient-active;
+	}
+}
