@@ -20,54 +20,6 @@ const MainPage = () => {
 				</div>
 			</div>
 			<img src='/public/images/Bg.png' alt='bg' className={styles.bg} />
-
-			{/* <div className={styles.oval}></div>
-
-			<img
-				className={styles.oval2}
-				src='/public/images/Ellipse 75.png'
-				alt='elips'
-			/>
-			<img
-				className={styles.oval3}
-				src='/public/images/Ellipse 76.png'
-				alt='elips'
-			/>
-
-			<img
-				src='/public/images/gradient1.png'
-				alt='gradient1.png'
-				className={styles.gradient1}
-			/>
-			<img
-				src='/public/images/gradient2.png'
-				alt='gradient2.png'
-				className={styles.gradient2}
-			/>
-			<img
-				src='/public/images/gradient3.png'
-				alt='gradient3.png'
-				className={styles.gradient3}
-			/>
-			<img className={styles.bitcoin} src={icons.bitcoin} alt={icons.bitcoin} />
-			<img
-				className={styles.litecoin}
-				src={icons.litecoin}
-				alt={icons.litecoin}
-			/>
-			<img className={styles.monero} src={icons.monero} alt={icons.monero} />
-			<img
-				className={styles.etherium}
-				src={icons.etherium}
-				alt={icons.etherium}
-			/>
-			<img
-				className={styles.starMini}
-				src={icons.starMini}
-				alt={icons.starMini}
-			/>
-			<img className={styles.star} src={icons.star} alt={icons.star} />
-			<img className={styles.star} src={icons.star} alt={icons.star} /> */}
 		</section>
 	)
 }
