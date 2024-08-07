@@ -1,0 +1,32 @@
+.container {
+	@apply mt-40 flex justify-center items-center;
+	.banner {
+		width: 1180px;
+		height: 580px;
+		border-radius: 50px;
+		background: linear-gradient(
+				97.94deg,
+				rgba(41, 46, 75, 0.375) 0%,
+				rgba(41, 46, 75, 0.175) 100%,
+				rgba(48, 58, 120, 0.5) 100%
+			),
+			radial-gradient(
+				62.64% 89.41% at -5.37% 100.9%,
+				rgba(61, 165, 245, 0.5) 0%,
+				rgba(62, 69, 238, 0) 100%
+			),
+			radial-gradient(
+				53.39% 67.78% at 100% 20.39%,
+				rgba(223, 29, 255, 0.5) 0%,
+				rgba(72, 205, 255, 0) 100%
+			);
+
+		border: 1px solid;
+
+		border-image-source: linear-gradient(
+			86.46deg,
+			#ffffff 0%,
+			rgba(255, 255, 255, 0) 100%
+		);
+	}
+}
