@@ -1,0 +1,17 @@
+.container {
+	@apply min-h-screen flex flex-col gap-6 justify-center items-center;
+
+	.icon {
+		@apply flex justify-end w-[1180px] px-12;
+		.image {
+			@apply w-[61px] h-[60px] block;
+		}
+	}
+	.cards {
+		@apply w-[1180px] h-[684px] grid grid-cols-3;
+
+		.info-card {
+			@apply w-[380px] h-[272px] rounded-[25px];
+		}
+	}
+}

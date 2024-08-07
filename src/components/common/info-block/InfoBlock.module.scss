@@ -1,0 +1,13 @@
+.info {
+	.section-name {
+		@apply font-semibold text-primary text-[20px] leading-[26px];
+	}
+
+	.title {
+		@apply text-[50px] text-[#fff] font-black leading-[65px] text-left;
+	}
+
+	.description {
+		@apply text-base mt-6 font-normal text-gray-30 leading-[22.4px] text-left;
+	}
+}

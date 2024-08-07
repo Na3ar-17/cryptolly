@@ -8,6 +8,12 @@
 		min-height: 115vh;
 		aspect-ratio: 16/9;
 	}
+
+	.bg2 {
+		position: absolute;
+		bottom: -411px;
+		z-index: -1;
+	}
 	.content {
 		@apply flex mt-[102px] justify-center items-center;
 	}

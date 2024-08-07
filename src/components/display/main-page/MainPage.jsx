@@ -1,7 +1,6 @@
 import NavBar from '../../common/navbar/NavBar'
 import Button from '../../ui/button/Button'
 import styles from './MainPage.module.scss'
-import { icons } from './icons'
 const MainPage = () => {
 	return (
 		<section className={styles.container}>
@@ -20,6 +19,7 @@ const MainPage = () => {
 				</div>
 			</div>
 			<img src='/public/images/Bg.png' alt='bg' className={styles.bg} />
+			<img className={styles.bg2} src='/public/images/Bg2.png' alt='bg-2' />
 		</section>
 	)
 }

@@ -1,0 +1,27 @@
+.card {
+	@apply w-[380px] h-[326px] flex flex-col px-6 py-8 rounded-[25px];
+	background: linear-gradient(
+			180deg,
+			rgba(41, 46, 75, 0.375) 0%,
+			rgba(48, 58, 120, 0.5) 100%
+		),
+		linear-gradient(
+			180deg,
+			rgba(223, 29, 255, 0.2) 0%,
+			rgba(72, 205, 255, 0) 100%
+		);
+	.header {
+		@apply flex flex-col items-center;
+		.icon {
+		}
+
+		.title {
+			@apply text-[#fff] text-[32px] mt-2 font-semibold leading-[41.6px] text-center;
+		}
+	}
+
+	.footer {
+		@apply text-gray-50 text-base font-normal leading-[22.4px] text-center;
+		margin-top: auto;
+	}
+}

@@ -1,7 +1,8 @@
 .container {
-	@apply mt-40 flex justify-center items-center min-h-screen;
+	@apply mt-[130px] flex justify-center items-center min-h-screen relative;
 	.banner {
 		@apply w-[1180px] h-[580px] rounded-[50px] place-items-center grid;
+
 		grid-template-columns: 1fr 1fr;
 		background: linear-gradient(
 				97.94deg,
