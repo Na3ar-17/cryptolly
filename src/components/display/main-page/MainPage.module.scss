@@ -15,6 +15,9 @@
 		}
 	}
 
+	.img {
+		position: absolute;
+	}
 	.bitcoin {
 		position: absolute;
 		width: 120px;
@@ -27,14 +30,14 @@
 		position: absolute;
 		aspect-ratio: 1;
 		width: 120px;
-		top: 583.7px;
-		left: 154.03px;
+		top: 630px;
+		left: 110px;
 	}
 	.monero {
 		position: absolute;
 		width: 165px;
 		aspect-ratio: 1;
-		top: 160px;
+		top: 230px;
 		right: 125px;
 	}
 
@@ -65,7 +68,64 @@
 		position: absolute;
 		width: 54px;
 		height: 46px;
-		top: 126px;
+		top: 190px;
 		right: 130px;
+	}
+
+	.oval {
+		position: absolute;
+		width: 1220px;
+		height: 514.99px;
+		top: 130px;
+		left: 70px;
+		transform: rotate(14.21deg);
+		border-radius: 50%;
+		border: none;
+		z-index: -1;
+		@apply bg-bg;
+	}
+
+	.oval::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 1px solid transparent;
+		background: linear-gradient(
+			93.63deg,
+			#484848 5.36%,
+			rgba(72, 72, 72, 0.36) 47.78%,
+			#484848 91.69%
+		);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+	}
+
+	.oval::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 99.8%;
+		height: 99.8%;
+		border-radius: 50%;
+		@apply bg-bg;
+	}
+
+	.oval2 {
+		width: 100%;
+		position: absolute;
+		top: 6px;
+		right: 0;
+	}
+	.oval3 {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }

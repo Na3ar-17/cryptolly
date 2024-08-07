@@ -19,6 +19,19 @@ const MainPage = () => {
 					</div>
 				</div>
 			</div>
+
+			<div className={styles.oval}></div>
+
+			<img
+				className={styles.oval2}
+				src='/public/images/Ellipse 75.png'
+				alt='elips'
+			/>
+			<img
+				className={styles.oval3}
+				src='/public/images/Ellipse 76.png'
+				alt='elips'
+			/>
 			<img className={styles.bitcoin} src={icons.bitcoin} alt={icons.bitcoin} />
 			<img
 				className={styles.litecoin}

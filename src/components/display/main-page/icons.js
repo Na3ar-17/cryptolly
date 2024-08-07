@@ -5,4 +5,11 @@ import monero from '/public/icons/Monero-2.png'
 import starMini from '/public/icons/star-img-mini.png'
 import star from '/public/icons/star-img.png'
 
-export const icons = { bitcoin, etherium, litecoin, monero, star, starMini }
+export const icons = {
+	bitcoin,
+	etherium,
+	litecoin,
+	monero,
+	star,
+	starMini,
+}
