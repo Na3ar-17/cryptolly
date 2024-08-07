@@ -1,5 +1,11 @@
 .container {
 	@apply relative;
+
+	.bg {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+	}
 	.content {
 		@apply flex mt-[102px] justify-center items-center;
 	}

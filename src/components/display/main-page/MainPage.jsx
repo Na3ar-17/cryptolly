@@ -19,8 +19,9 @@ const MainPage = () => {
 					</div>
 				</div>
 			</div>
+			<img src='/public/images/Bg.png' alt='bg' className={styles.bg} />
 
-			<div className={styles.oval}></div>
+			{/* <div className={styles.oval}></div>
 
 			<img
 				className={styles.oval2}
@@ -66,7 +67,7 @@ const MainPage = () => {
 				alt={icons.starMini}
 			/>
 			<img className={styles.star} src={icons.star} alt={icons.star} />
-			<img className={styles.star} src={icons.star} alt={icons.star} />
+			<img className={styles.star} src={icons.star} alt={icons.star} /> */}
 		</section>
 	)
 }
