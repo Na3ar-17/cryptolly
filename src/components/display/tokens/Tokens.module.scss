@@ -1,0 +1,35 @@
+.container {
+	@apply flex flex-col mt-[40px] relative justify-center items-center min-h-screen text-center;
+
+	.cards {
+		@apply flex gap-5 items-center w-[1180px] mt-[100px];
+	}
+
+	.coins {
+		position: absolute;
+		top: 39px;
+		left: 0;
+	}
+
+	.gradient {
+		position: absolute;
+		width: 287px;
+		height: 406px;
+		top: 0;
+		right: -150px;
+		filter: blur(60px);
+
+		background: linear-gradient(180deg, rgba(24, 255, 158, 0) 0%, #17ffe3 100%);
+	}
+
+	.gradient2 {
+		width: 596.4px;
+		height: 595.93px;
+		top: -100px;
+		right: -443px;
+		transform: rotate(-180deg);
+		position: absolute;
+		filter: blur(150px);
+		background: linear-gradient(180deg, #2c4982 0%, #2cd095 100%);
+	}
+}

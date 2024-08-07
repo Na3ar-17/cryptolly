@@ -1,8 +1,13 @@
+import { cn } from '../../../../lib/utils'
 import styles from './Card.module.scss'
 
-const Card = ({ img, title, description }) => {
+const Card = ({ img, title, description, isTokenCard = false }) => {
 	return (
-		<div className={styles.card}>
+		<div
+			className={cn(styles.card, {
+				[styles.tokenCard]: isTokenCard,
+			})}
+		>
 			<header className={styles.header}>
 				<div className={styles.icon}>
 					<img className={styles.image} src={img} alt='service-icon' />

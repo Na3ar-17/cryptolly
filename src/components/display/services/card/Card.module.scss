@@ -1,5 +1,5 @@
 .card {
-	@apply w-[380px] h-[326px] flex flex-col px-6 py-8 rounded-[25px];
+	@apply w-[380px] relative h-[326px] flex flex-col px-6 py-8 rounded-[25px];
 	background: linear-gradient(
 			180deg,
 			rgba(41, 46, 75, 0.375) 0%,
@@ -23,5 +23,54 @@
 	.footer {
 		@apply text-gray-50 text-base font-normal leading-[22.4px] text-center;
 		margin-top: auto;
+	}
+
+	&.tokenCard {
+		width: 380px;
+		height: 330px;
+		border-radius: 50px;
+		background: none;
+
+		@apply px-[37px] py-8;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(-180deg);
+			width: 380px;
+			height: 330px;
+			border-radius: 50px;
+			z-index: 100;
+			z-index: -1;
+
+			background: linear-gradient(
+					97.94deg,
+					rgba(41, 46, 75, 0.225) 0%,
+					rgba(37, 40, 58, 0.105) 100%,
+					rgba(41, 46, 75, 0.105) 100%
+				),
+				radial-gradient(
+					65.97% 92.77% at 113.3% 120.61%,
+					rgba(62, 238, 227, 0.5) 0%,
+					rgba(62, 69, 238, 0) 100%
+				),
+				radial-gradient(
+					60.52% 85.11% at 9.86% -26.12%,
+					rgba(223, 29, 255, 0.35) 0%,
+					rgba(72, 205, 255, 0) 100%
+				);
+		}
+
+		.header {
+			.title {
+				@apply text-[#E9EEF4] mt-6;
+			}
+		}
+
+		.footer {
+			@apply text-[#E8E8E8] mt-[18px]  text-base font-normal leading-[22.4px] text-center;
+		}
 	}
 }
