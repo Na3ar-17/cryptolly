@@ -32,6 +32,22 @@ const MainPage = () => {
 				src='/public/images/Ellipse 76.png'
 				alt='elips'
 			/>
+
+			<img
+				src='/public/images/gradient1.png'
+				alt='gradient1.png'
+				className={styles.gradient1}
+			/>
+			<img
+				src='/public/images/gradient2.png'
+				alt='gradient2.png'
+				className={styles.gradient2}
+			/>
+			<img
+				src='/public/images/gradient3.png'
+				alt='gradient3.png'
+				className={styles.gradient3}
+			/>
 			<img className={styles.bitcoin} src={icons.bitcoin} alt={icons.bitcoin} />
 			<img
 				className={styles.litecoin}

@@ -68,8 +68,8 @@
 		position: absolute;
 		width: 54px;
 		height: 46px;
-		top: 190px;
 		right: 130px;
+		top: 190px;
 	}
 
 	.oval {
@@ -121,11 +121,43 @@
 		position: absolute;
 		top: 6px;
 		right: 0;
+		z-index: -1;
 	}
 	.oval3 {
 		width: 100%;
 		position: absolute;
 		top: 0;
 		right: 0;
+		z-index: -1;
+		height: 100vh;
+	}
+
+	.gradient1 {
+		position: absolute;
+		width: 603px;
+		height: 689.77px;
+		top: 73.14px;
+		right: 0;
+		filter: blur(30px);
+		z-index: -1;
+	}
+
+	.gradient2 {
+		position: absolute;
+		width: 500px;
+		aspect-ratio: 15/16;
+		top: 10px;
+		left: 90px;
+		filter: blur(20px);
+		z-index: -1;
+	}
+	.gradient3 {
+		position: absolute;
+		width: 1440px;
+		height: 909px;
+		top: 0;
+		left: 1px;
+		z-index: -1;
+		filter: blur(2px);
 	}
 }
