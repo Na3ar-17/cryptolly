@@ -2,8 +2,7 @@ import { useState } from 'react'
 import { cn } from '../../../../lib/utils'
 import styles from './Card.module.scss'
 
-const Card = ({ question, answer }) => {
-	const [isOpen, setIsOpen] = useState(false)
+const Card = ({ question, answer, isOpen, setCurrentCard }) => {
 	return (
 		<div
 			className={cn(styles.card, {
@@ -17,7 +16,7 @@ const Card = ({ question, answer }) => {
 				className={cn(styles.icon, {
 					'rotate-45': !isOpen,
 				})}
-				onClick={() => setIsOpen(!isOpen)}
+				onClick={() => setCurrentCard(question)}
 			/>
 			<footer
 				className={cn(styles.footer, {

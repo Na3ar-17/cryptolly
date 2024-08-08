@@ -1,9 +1,20 @@
+import { useState } from 'react'
 import { FAQCardData } from '../../../data/FAQ.data'
 import InfoBlock from '../../common/info-block/InfoBlock'
 import Card from './card/Card'
 import styles from './FAQ.module.scss'
 
 const FAQ = () => {
+	const [currentCard, setCurrentCard] = useState('')
+
+	const action = question => {
+		setCurrentCard(question)
+
+		if (currentCard === question) {
+			setCurrentCard('')
+		}
+	}
+
 	return (
 		<section className={styles.container}>
 			<InfoBlock
@@ -16,7 +27,13 @@ const FAQ = () => {
 			/>
 			<div className={styles.cards}>
 				{FAQCardData.map((el, i) => (
-					<Card answer={el.answer} question={el.question} key={i} />
+					<Card
+						setCurrentCard={action}
+						isOpen={currentCard === el.question}
+						answer={el.answer}
+						question={el.question}
+						key={i}
+					/>
 				))}
 			</div>
 			<img
