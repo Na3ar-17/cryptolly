@@ -62,6 +62,14 @@
 				);
 		}
 
+		&:nth-child(2) {
+			&::before {
+				width: 330px;
+				height: 380px;
+				transform: translate(-50%, -50%) rotateZ(90deg);
+			}
+		}
+
 		.header {
 			.title {
 				@apply text-[#E9EEF4] mt-6;
