@@ -31,7 +31,7 @@
 		border-radius: 50px;
 		background: none;
 
-		@apply px-[37px] py-8;
+		@apply px-[37px] py-8 bg-bg;
 
 		&::before {
 			content: '';
@@ -43,7 +43,6 @@
 			height: 330px;
 			border-radius: 50px;
 			z-index: 100;
-			z-index: -1;
 
 			background: linear-gradient(
 					97.94deg,

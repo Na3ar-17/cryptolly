@@ -1,0 +1,17 @@
+.container {
+	@apply min-h-screen relative mt-[100px] flex flex-col items-center;
+
+	.cards {
+		@apply mt-[100px];
+		column-count: 2;
+		gap: 20px;
+	}
+
+	.illustration {
+		position: absolute;
+		top: -600px;
+		right: 0;
+		z-index: -1;
+		aspect-ratio: 1;
+	}
+}
