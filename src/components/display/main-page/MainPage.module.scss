@@ -202,4 +202,45 @@
 			rgba(255, 255, 255, 0) 100%
 		);
 	}
+
+	.bitcoin {
+		position: absolute;
+		top: 129px;
+		left: 70.75px;
+	}
+	.litecoin {
+		position: absolute;
+		top: 579.7px;
+		left: 154.03px;
+	}
+	.monero {
+		position: absolute;
+		top: 225px;
+		right: 105px;
+	}
+	.etherium {
+		position: absolute;
+		top: 568.75px;
+		right: 278.7px;
+		z-index: 100;
+	}
+
+	.star {
+		position: absolute;
+		z-index: 100;
+		top: 241px;
+		left: 190px;
+	}
+	.star2 {
+		position: absolute;
+		z-index: 100;
+		top: 699px;
+		left: 1339px;
+	}
+	.starMini {
+		position: absolute;
+		z-index: 100;
+		top: 176px;
+		left: 1344px;
+	}
 }
