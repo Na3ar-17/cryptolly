@@ -1,4 +1,5 @@
 import AboutUs from './components/display/about-us/AboutUs'
+import Blog from './components/display/blog/Blog'
 import FAQ from './components/display/FAQ/FAQ'
 import MainPage from './components/display/main-page/MainPage'
 import Services from './components/display/services/Services'
@@ -14,6 +15,7 @@ function App() {
 			<Tokens />
 			<FAQ />
 			<Team />
+			<Blog />
 		</>
 	)
 }

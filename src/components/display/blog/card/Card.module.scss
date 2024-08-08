@@ -1,0 +1,28 @@
+.card {
+	@apply flex gap-4 flex-col items-center justify-center text-center w-[380px] h-[454px];
+
+	.image {
+		.img {
+			width: inherit;
+			height: 258px;
+			border-radius: 16px;
+		}
+	}
+
+	.footer {
+		@apply flex flex-col gap-4 items-center;
+		.date {
+			@apply text-sm font-semibold leading-[19.6px] text-[#E2E2E2];
+		}
+
+		.line {
+			width: 230px;
+			height: 2px;
+			background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+		}
+
+		.title {
+			@apply text-[#F0F0F0] max-w-[290px] text-[20px] font-semibold leading-[26px];
+		}
+	}
+}
