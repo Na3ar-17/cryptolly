@@ -1,4 +1,5 @@
 import AboutUs from './components/display/about-us/AboutUs'
+import Banner from './components/display/banner/Banner'
 import Blog from './components/display/blog/Blog'
 import FAQ from './components/display/FAQ/FAQ'
 import MainPage from './components/display/main-page/MainPage'
@@ -16,6 +17,7 @@ function App() {
 			<FAQ />
 			<Team />
 			<Blog />
+			<Banner />
 		</>
 	)
 }
