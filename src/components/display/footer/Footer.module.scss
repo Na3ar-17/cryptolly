@@ -1,0 +1,24 @@
+.container {
+	@apply flex justify-center relative items-center mt-[300px]  mb-[115px];
+	.content {
+		@apply w-[1180px] grid h-[272px] relative;
+		grid-template-columns: 380px 1fr;
+
+		.contact {
+			@apply flex flex-col gap-6;
+
+			.text {
+				@apply text-sm font-semibold leading-[19.6px] text-left text-gray-40;
+			}
+		}
+		.menu {
+			@apply pt-[70px] pl-[163px];
+		}
+	}
+
+	.gradient {
+		position: absolute;
+		left: -20px;
+		z-index: -1;
+	}
+}

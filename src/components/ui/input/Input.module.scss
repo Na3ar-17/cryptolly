@@ -1,0 +1,11 @@
+.container {
+	@apply bg-gray-10 rounded-[10px] py-4 px-5 w-[304px] h-[56px] flex;
+
+	input {
+		@apply text-gray-60 w-full h-full text-base font-normal leading-[22.4px];
+	}
+
+	.icon {
+		@apply block;
+	}
+}

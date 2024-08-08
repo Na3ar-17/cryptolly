@@ -26,6 +26,21 @@ const Banner = () => {
 					/>
 				</div>
 			</div>
+			<img
+				src='/public/images/footer-circle1.png'
+				alt='footer-circle1.png'
+				className={styles.circle1}
+			/>
+			<img
+				src='/public/images/footer-circle2.png'
+				alt='footer-circle2.png'
+				className={styles.circle2}
+			/>
+			<img
+				src='/public/images/footer-circle3.png'
+				alt='footer-circle3.png'
+				className={styles.circle3}
+			/>
 		</section>
 	)
 }

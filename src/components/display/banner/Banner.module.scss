@@ -1,5 +1,5 @@
 .container {
-	@apply min-h-screen flex justify-center items-center;
+	@apply flex relative mt-[330px] justify-center items-center;
 	.banner {
 		@apply grid bg-bg relative items-center pl-[88px] grid-cols-2 rounded-[50px] h-[420px]  w-[1180px];
 
@@ -46,5 +46,27 @@
 				transform: translate(-50%, -50%);
 			}
 		}
+	}
+
+	.circle1 {
+		position: absolute;
+		z-index: -1;
+		bottom: -65%;
+	}
+	.circle2 {
+		position: absolute;
+		z-index: -1;
+		top: 90%;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.circle3 {
+		position: absolute;
+		z-index: -1;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
 	}
 }
