@@ -1,6 +1,5 @@
 .container {
 	@apply relative h-screen;
-
 	.bg {
 		position: absolute;
 		top: -30px;
@@ -18,7 +17,8 @@
 		width: 100vw;
 	}
 	.content {
-		@apply flex mt-[102px] justify-center items-center;
+		@apply flex justify-center items-center;
+		z-index: 100;
 	}
 	.text-block {
 		@apply max-w-[780px] gap-8 flex flex-col text-center items-center;
@@ -29,6 +29,93 @@
 
 		.text {
 			@apply max-w-[580px] px-2 text-gray-40 text-base font-normal leading-[22.4px];
+		}
+	}
+
+	.circle1 {
+		position: absolute;
+		top: 54%;
+		left: 43%;
+		transform: translate(-50%, -50%) rotate(14deg);
+		width: 1187.08px;
+		height: 514.99px;
+		border-radius: 50%;
+		background-image: linear-gradient(
+			93.63deg,
+			#484848 5.36%,
+			rgba(72, 72, 72, 0.36) 47.78%,
+			#484848 91.69%
+		);
+		z-index: -1;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 99.8%;
+			height: 99.8%;
+			@apply bg-bg rounded-[50%];
+		}
+	}
+
+	.circle2 {
+		position: absolute;
+		top: 55%;
+		left: 46%;
+		transform: translate(-50%, -50%) rotate(14deg);
+		width: 1724.75px;
+		height: 748.24px;
+		z-index: -2;
+		background-image: linear-gradient(
+			93.63deg,
+			#484848 5.36%,
+			rgba(72, 72, 72, 0.36) 47.78%,
+			#484848 91.69%
+		);
+		border-radius: 50%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 99.8%;
+			height: 99.8%;
+
+			@apply bg-bg rounded-[50%];
+		}
+	}
+
+	.circle3 {
+		position: absolute;
+		top: 52%;
+		left: 42%;
+		transform: translate(-50%, -50%) rotate(14deg);
+		width: 2378.98px;
+		height: 1032.06px;
+		z-index: -3;
+
+		background-image: linear-gradient(
+			93.63deg,
+			#484848 5.36%,
+			rgba(72, 72, 72, 0.36) 47.78%,
+			#484848 91.69%
+		);
+
+		border-radius: 50%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 99.8%;
+			height: 99.8%;
+
+			@apply bg-bg rounded-[50%];
 		}
 	}
 }

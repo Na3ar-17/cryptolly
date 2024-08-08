@@ -18,8 +18,11 @@ const MainPage = () => {
 					</div>
 				</div>
 			</div>
-			<img src='/public/images/Bg.png' alt='bg' className={styles.bg} />
-			<img className={styles.bg2} src='/public/images/Bg2.png' alt='bg-2' />
+			{/* <img src='/public/images/Bg.png' alt='bg' className={styles.bg} /> */}
+			{/* <img className={styles.bg2} src='/public/images/Bg2.png' alt='bg-2' /> */}
+			<div className={styles.circle1}></div>
+			<div className={styles.circle2}></div>
+			<div className={styles.circle3}></div>
 		</section>
 	)
 }
