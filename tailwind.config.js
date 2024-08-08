@@ -6,6 +6,10 @@ export default {
 	theme: {
 		extend: {},
 		colors: COLORS,
+		screens: {
+			md: { max: '745px' },
+			sm: { max: '376px' },
+		},
 	},
 	plugins: [
 		plugin(function ({ addUtilities }) {

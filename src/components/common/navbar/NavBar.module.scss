@@ -1,9 +1,13 @@
 .nav {
-	@apply flex items-center h-[100px] mb-[151px] justify-between px-[140px];
+	@apply flex items-center h-[100px] mb-[151px] md:mb-[232px] justify-between px-[140px] md:px-[48px];
 
 	.logo {
 		.image {
 			@apply w-[183px] h-[48px];
 		}
+	}
+
+	.action {
+		@apply md:flex md:items-center md:gap-[74px];
 	}
 }

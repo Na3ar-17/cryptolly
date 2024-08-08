@@ -28,7 +28,7 @@
 		}
 
 		.text {
-			@apply max-w-[580px] px-2 text-gray-40 text-base font-normal leading-[22.4px];
+			@apply max-w-[580px] px-2 text-gray-40 text-base font-normal;
 		}
 	}
 
@@ -173,7 +173,7 @@
 		background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174aff 100%);
 		filter: blur(90px);
 
-		z-index: 2;
+		z-index: -1;
 	}
 	.gradient6 {
 		position: absolute;
@@ -242,5 +242,91 @@
 		z-index: 100;
 		top: 176px;
 		left: 1344px;
+	}
+}
+
+@media screen and (max-width: 745px) {
+	.container {
+		.content {
+		}
+		.text-block {
+			.heading {
+				@apply md:text-[64px] leading-[83.2px];
+			}
+
+			.text {
+				@apply text-[16px] leading-[22.4px];
+			}
+		}
+
+		.circle1 {
+			width: 779.52px;
+			height: 338.18px;
+			top: 49%;
+		}
+
+		.circle2 {
+			width: 1132.59px;
+			height: 491.35px;
+			top: 50%;
+			left: 48%;
+		}
+
+		.circle3 {
+			width: 1562.21px;
+			height: 677.73px;
+			top: 49%;
+			left: 42%;
+		}
+
+		.gradient1 {
+			top: 92.64px;
+			left: 124.33px;
+		}
+		.gradient2 {
+			top: -254.99px;
+			left: 50.33px;
+		}
+		.gradient3 {
+		}
+		.gradient4 {
+			top: 92px;
+			right: -421px;
+		}
+		.gradient5 {
+			filter: blur(113px);
+			top: 344.84px;
+			right: 31px;
+		}
+		.gradient6 {
+			filter: blur(240px);
+		}
+
+		.gradient7 {
+			display: none;
+		}
+
+		.bitcoin {
+			display: none;
+		}
+		.litecoin {
+			display: none;
+		}
+		.monero {
+			display: none;
+		}
+		.etherium {
+			display: none;
+		}
+
+		.star {
+			display: none;
+		}
+		.star2 {
+			display: none;
+		}
+		.starMini {
+			display: none;
+		}
 	}
 }
