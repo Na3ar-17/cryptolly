@@ -7,7 +7,13 @@ const MainPage = () => {
 			<NavBar />
 			<div className={styles.content}>
 				<div className={styles['text-block']}>
-					<h1 className={styles.heading}>Own Your Crypto Adventure</h1>
+					<h1 className={styles.heading}>
+						O
+						<span className='relative'>
+							<span className={styles.gradient7}></span>w
+						</span>
+						n Your Crypto Adventure
+					</h1>
 					<p className={styles.text}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -23,6 +29,13 @@ const MainPage = () => {
 			<div className={styles.circle1}></div>
 			<div className={styles.circle2}></div>
 			<div className={styles.circle3}></div>
+
+			<div className={styles.gradient1}></div>
+			<div className={styles.gradient2}></div>
+			<div className={styles.gradient3}></div>
+			<div className={styles.gradient4}></div>
+			<div className={styles.gradient5}></div>
+			<div className={styles.gradient6}></div>
 		</section>
 	)
 }
