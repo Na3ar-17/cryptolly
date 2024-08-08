@@ -19,8 +19,7 @@
 
 	&::after {
 		content: '';
-		@apply h-[98.5%] absolute w-[99.6%] bg-bg;
-
+		@apply h-[97.8%] absolute w-[99.6%] bg-bg;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
