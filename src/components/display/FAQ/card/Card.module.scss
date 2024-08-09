@@ -1,5 +1,5 @@
 .card {
-	@apply relative flex flex-col gap-y-5 mb-5  overflow-hidden rounded-[4px] p-5 max-h-[92px] w-[580px];
+	@apply relative flex flex-col gap-y-5 mb-5  overflow-hidden rounded-[4px] p-5 md:max-h-[80px] max-h-[92px] w-[580px];
 	transition: max-height 0.2s ease-out;
 
 	&::before {
@@ -32,7 +32,7 @@
 
 	.icon {
 		position: absolute;
-		top: 20px;
+		top: 15px;
 		right: 20px;
 		cursor: pointer;
 		@apply transition-all;
