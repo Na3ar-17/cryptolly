@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { navBarData } from '../../../data/navbar.data'
+import { cn } from '../../../lib/utils'
 import Burger from '../../ui/burger/Burger'
 import Button from '../../ui/button/Button'
 import List from './list/List'
@@ -17,6 +18,28 @@ const NavBar = () => {
 			<div className={styles.action}>
 				<Button label={'Get in Touch'} />
 				<Burger isOpen={isOpen} setIsOpen={() => setIsOpen(!isOpen)} />
+			</div>
+			<div
+				style={{ transitionDelay: !isOpen ? '0.2s' : '0s' }}
+				className={cn(styles['adaptive-menu'], {
+					[styles.open]: isOpen,
+				})}
+			>
+				<ul className={styles.list}>
+					{navBarData.map((el, i) => (
+						<li
+							style={{
+								transition: !isOpen
+									? `all 0.${i + 1}s ease-in`
+									: `all 0.${i + 1}s ease-in-out`,
+							}}
+							key={i}
+							className={styles.el}
+						>
+							{el}
+						</li>
+					))}
+				</ul>
 			</div>
 		</nav>
 	)
