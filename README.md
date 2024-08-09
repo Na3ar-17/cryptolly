@@ -1,8 +1,19 @@
-# React + Vite
+📦 Installation
+To get started with the project, first clone the repository and navigate to the project directory:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+bash
+Копіювати код
+git clone https://github.com/Na3ar-17/cryptolly.git
+cd your-repo-name
+Next, install all the required dependencies using Yarn:
 
-Currently, two official plugins are available:
+bash
+Копіювати код
+yarn install
+🚀 Starting the Development Server
+Once the dependencies are installed, you can start the development server:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Копіювати код
+yarn start
+The app will be available at http://localhost:3000 in your browser.
