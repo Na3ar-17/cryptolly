@@ -8,7 +8,7 @@ const List = ({ isFooter = false }) => {
 			{navBarData.map((el, i) => (
 				<li
 					key={i}
-					className={cn(styles.el, isFooter ? 'text-gray-40' : 'text-[#fff]')}
+					className={cn(styles.el, isFooter ? 'text-gray-40 ' : 'text-[#fff]')}
 				>
 					{el}
 				</li>

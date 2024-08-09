@@ -1,18 +1,25 @@
 .container {
-	@apply flex justify-center relative items-center mt-[300px]  mb-[115px];
+	@apply flex justify-center flex-col relative items-center md:mt-[230px] mt-[300px] md:mb-[30px] mb-[115px];
 	.content {
-		@apply w-[1180px] grid h-[272px] relative;
+		@apply w-[1180px] grid  md:w-[648px] md:mb-[30px]  relative;
 		grid-template-columns: 380px 1fr;
 
 		.contact {
-			@apply flex flex-col gap-6;
+			@apply flex flex-col gap-10;
 
 			.text {
 				@apply text-sm font-semibold leading-[19.6px] text-left text-gray-40;
 			}
 		}
 		.menu {
-			@apply pt-[70px] pl-[163px];
+			@apply pt-[70px] pl-[163px] md:p-0 md:pl-[50px] md:flex;
+
+			.list {
+				@apply flex items-center md:items-start gap-6 md:flex-col;
+				.el {
+					@apply text-sm  leading-[19.6px] font-semibold text-gray-40;
+				}
+			}
 		}
 	}
 
@@ -20,5 +27,20 @@
 		position: absolute;
 		left: -20px;
 		z-index: -1;
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.container {
+		.content {
+			place-items: center;
+		}
+
+		.gradient {
+			position: absolute;
+			left: 40px;
+			width: 100%;
+			filter: blur(30px);
+		}
 	}
 }

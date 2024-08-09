@@ -1,3 +1,5 @@
+import { navBarData } from '../../../data/navbar.data'
+import { cn } from '../../../lib/utils'
 import List from '../../common/navbar/list/List'
 import Input from '../../ui/input/Input'
 import styles from './Footer.module.scss'
@@ -16,14 +18,22 @@ const Footer = () => {
 						ad minim veniam, quis nostrud.
 					</p>
 					<Input label={'Email Address'} />
-					<p className='text-gray-20 font-normal text-xs leading-[16.8px]'>
-						© 2021 GPD Holdings, LLC FinCEN MSB
-					</p>
 				</div>
 				<div className={styles.menu}>
-					<List isFooter />
+					<ul className={styles.list}>
+						{navBarData.map((el, i) => (
+							<li key={i} className={styles.el}>
+								{el}
+							</li>
+						))}
+					</ul>
 				</div>
-				<p className='text-gray-20 leading-[19.6px] text-sm font-semibold absolute right-0 bottom-[20px]'>
+			</div>
+			<div className='flex items-center justify-between w-[1180px] md:w-[648px] md:mt-[69px] mt-6'>
+				<p className='text-gray-20 font-normal text-xs leading-[16.8px]'>
+					© 2021 GPD Holdings, LLC FinCEN MSB
+				</p>
+				<p className='text-gray-20 leading-[19.6px] text-sm font-semibold'>
 					Privacy Policy and Terms of Service
 				</p>
 			</div>
