@@ -1,5 +1,5 @@
 .container {
-	@apply relative mt-[100px] h-[685px] flex flex-col items-center;
+	@apply relative mt-[100px] h-[685px] md:h-[1206px] flex flex-col items-center;
 
 	.cards {
 		@apply mt-[100px];
@@ -13,5 +13,19 @@
 		right: 0;
 		z-index: -1;
 		aspect-ratio: 1;
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.container {
+		.cards {
+			@apply mt-[60px];
+			column-count: 1;
+			gap: 30px;
+		}
+
+		.illustration {
+			top: -214px;
+		}
 	}
 }

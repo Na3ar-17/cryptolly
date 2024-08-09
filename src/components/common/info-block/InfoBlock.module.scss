@@ -8,6 +8,6 @@
 	}
 
 	.description {
-		@apply text-base mt-6 md:mt-3 font-normal text-gray-30 leading-[22.4px] text-left;
+		@apply text-base md:max-w-[571px] mt-6 md:mt-3 font-normal text-gray-30 leading-[22.4px] text-left;
 	}
 }
