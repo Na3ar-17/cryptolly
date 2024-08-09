@@ -20,10 +20,16 @@ const Banner = () => {
 					</div>
 				</div>
 				<div className={styles.image}>
-					<img
-						src='/public/images/stack_of_coins.png'
-						alt='stack_of_coins.png'
-					/>
+					<picture>
+						<source
+							srcSet='/public/images/stack_of_coins-md.png'
+							media='(max-width:744px)'
+						/>
+						<img
+							src='/public/images/stack_of_coins.png'
+							alt='stack_of_coins.png'
+						/>
+					</picture>
 				</div>
 			</div>
 			<img
@@ -40,6 +46,11 @@ const Banner = () => {
 				src='/public/images/footer-circle3.png'
 				alt='footer-circle3.png'
 				className={styles.circle3}
+			/>
+			<img
+				src='/public/images/banner-circles.png'
+				alt='banner-circles.png'
+				className={styles.circles}
 			/>
 		</section>
 	)
