@@ -1,8 +1,9 @@
 .card {
-	@apply flex gap-4 flex-col items-center justify-center text-center w-[380px] h-[454px];
+	@apply flex gap-4 md:w-[648px] md:h-[609px]  flex-col items-center justify-center text-center w-[380px] h-[454px];
 
 	.image {
 		.img {
+			@apply md:h-[439px];
 			width: inherit;
 			height: 258px;
 			border-radius: 16px;
@@ -11,6 +12,7 @@
 
 	.footer {
 		@apply flex flex-col gap-4 items-center;
+
 		.date {
 			@apply text-sm font-semibold leading-[19.6px] text-[#E2E2E2];
 		}
@@ -23,6 +25,24 @@
 
 		.title {
 			@apply text-[#F0F0F0] max-w-[290px] text-[20px] font-semibold leading-[26px];
+		}
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.card {
+		.image {
+			height: 100%;
+			width: 100%;
+			.img {
+				height: 100%;
+			}
+		}
+
+		.footer {
+			.title {
+				max-width: 100%;
+			}
 		}
 	}
 }

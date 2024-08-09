@@ -1,5 +1,5 @@
 .container {
-	@apply relative mt-[226px] md:mt-[0px] mb-[200px];
+	@apply relative mt-[226px] md:mt-[0px];
 	.cards {
 		@apply flex items-center md:flex-wrap justify-center gap-5 mt-[100px] md:mt-[60px];
 		.info-card {

@@ -11,7 +11,7 @@ const Card = ({ date, title, img }) => {
 				<p className={styles.date}>{date}</p>
 				<div className={styles.line}></div>
 				<p className={styles.title}>{title}</p>
-				<div>
+				<div className='md:mt-2'>
 					<Button
 						style={{ fontWeight: '500', fontSize: '16px' }}
 						label={'Read More'}
