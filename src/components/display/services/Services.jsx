@@ -7,7 +7,7 @@ const Services = () => {
 		<section className={styles.container}>
 			<div className={styles.icon}>
 				<img
-					src='/public/icons/star-img.png'
+					src='../../../../public/icons/star-img.png'
 					alt='start'
 					className={styles.image}
 				/>

@@ -38,12 +38,12 @@ const FAQ = () => {
 			</div>
 			<picture>
 				<source
-					srcSet='/public/images/illustration-md.png'
+					srcSet='../../../../public/images/illustration-md.png'
 					media='(max-width: 744px)'
 				/>
 				<img
 					className={styles.illustration}
-					src='/public/images/illustration.png'
+					src='../../../../public/images/illustration.png'
 					alt='illustration.png'
 				/>
 			</picture>

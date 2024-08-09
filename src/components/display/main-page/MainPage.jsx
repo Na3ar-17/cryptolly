@@ -25,7 +25,6 @@ const MainPage = () => {
 					</div>
 				</div>
 			</div>
-			{/* <img src='/public/images/Bg.png' alt='bg' className={styles.bg} /> */}
 			<div className={styles.circle1}></div>
 			<div className={styles.circle2}></div>
 			<div className={styles.circle3}></div>

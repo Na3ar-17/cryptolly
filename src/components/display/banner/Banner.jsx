@@ -22,33 +22,33 @@ const Banner = () => {
 				<div className={styles.image}>
 					<picture>
 						<source
-							srcSet='/public/images/stack_of_coins-md.png'
+							srcSet='../../../../public/images/stack_of_coins-md.png'
 							media='(max-width:744px)'
 						/>
 						<img
-							src='/public/images/stack_of_coins.png'
+							src='../../../../public/images/stack_of_coins.png'
 							alt='stack_of_coins.png'
 						/>
 					</picture>
 				</div>
 			</div>
 			<img
-				src='/public/images/footer-circle1.png'
+				src='../../../../public/images/footer-circle1.png'
 				alt='footer-circle1.png'
 				className={styles.circle1}
 			/>
 			<img
-				src='/public/images/footer-circle2.png'
+				src='../../../../public/images/footer-circle2.png'
 				alt='footer-circle2.png'
 				className={styles.circle2}
 			/>
 			<img
-				src='/public/images/footer-circle3.png'
+				src='../../../../public/images/footer-circle3.png'
 				alt='footer-circle3.png'
 				className={styles.circle3}
 			/>
 			<img
-				src='/public/images/banner-circles.png'
+				src='../../../../public/images/banner-circles.png'
 				alt='banner-circles.png'
 				className={styles.circles}
 			/>

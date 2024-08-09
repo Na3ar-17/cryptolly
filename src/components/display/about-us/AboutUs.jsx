@@ -45,7 +45,7 @@ const AboutUs = () => {
 				<div className={styles.img}>
 					<img
 						className={styles.image}
-						src='/public/icons/coin.png'
+						src='../../../../public/icons/coin.png'
 						alt='coin'
 					/>
 				</div>

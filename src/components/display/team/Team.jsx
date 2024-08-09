@@ -23,20 +23,29 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 			<div className={styles.cards}>
 				<div className={styles['info-card']}>
 					<img
-						src='/public/images/team-image4.png'
+						src='../../../../public/images/team-image4.png'
 						alt='team-image4.png'
 						className={styles['bg-image']}
 					/>
 					<img
-						src='/public/images/team-bg-opacity.png'
+						src='../../../../public/images/team-bg-opacity.png'
 						alt='team-bg-opacity.png'
 						className={styles['bg-opacity']}
 					/>
 					<header className={styles.header}>
-						<img src='/public/icons/facebook.png' alt='facebook.png' />
-						<img src='/public/icons/twitter.png' alt='twitter.png' />
-						<img src='/public/icons/instagram.png' alt='instagram.png' />
-						<img src='/public/icons/linkedin.png' alt='linkedin.png' />
+						<img
+							src='../../../../public/icons/facebook.png'
+							alt='facebook.png'
+						/>
+						<img src='../../../../public/icons/twitter.png' alt='twitter.png' />
+						<img
+							src='../../../../public/icons/instagram.png'
+							alt='instagram.png'
+						/>
+						<img
+							src='../../../../public/icons/linkedin.png'
+							alt='linkedin.png'
+						/>
 					</header>
 					<footer className={styles.footer}>
 						<p className={styles.title}>Hulon Anish</p>
@@ -53,11 +62,11 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 
 			<picture>
 				<source
-					srcSet='/public/images/coins2-md.png'
+					srcSet='../../../../public/images/coins2-md.png'
 					media='(max-width:744px)'
 				/>
 				<img
-					src='/public/images/coins2.png'
+					src='../../../../public/images/coins2.png'
 					alt='coins2.png'
 					className={styles.coins}
 				/>
@@ -65,11 +74,11 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 
 			<picture>
 				<source
-					srcSet='/public/images/bg-gradient-md.png'
+					srcSet='../../../../public/images/bg-gradient-md.png'
 					media='(max-width:744px)'
 				/>
 				<img
-					src='/public/images/bg-gradient.png'
+					src='../../../../public/images/bg-gradient.png'
 					alt='bg-gradient.png'
 					className={styles.gradient}
 				/>

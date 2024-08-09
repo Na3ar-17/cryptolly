@@ -29,11 +29,11 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 			</div>
 			<picture>
 				<source
-					srcSet='/public/images/coins-md.png'
+					srcSet='../../../../public/images/coins-md.png'
 					media='(max-width:744px)'
 				/>
 				<img
-					src='/public/images/coins.png'
+					src='../../../../public/images/coins.png'
 					alt='coins'
 					className={styles.coins}
 				/>

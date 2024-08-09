@@ -11,7 +11,7 @@ const Card = ({ question, answer, isOpen, setCurrentCard }) => {
 		>
 			<header className={styles.header}>{question}</header>
 			<img
-				src='/public/icons/action-icon.png'
+				src='../../../../../public/icons/action-icon.png'
 				alt='action-icon.png'
 				className={cn(styles.icon, {
 					'rotate-45': !isOpen,
