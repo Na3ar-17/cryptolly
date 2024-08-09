@@ -1,10 +1,10 @@
 .container {
-	@apply mt-[100px]  flex justify-center items-center min-h-screen relative;
+	@apply mt-[100px] md:mt-[28px] flex justify-center items-center min-h-screen relative;
 
 	.banner {
-		@apply w-[1180px] h-[580px] relative bg-bg rounded-[50px] place-items-center grid;
+		@apply w-[1180px] md:w-[648px] h-[580px] relative bg-bg rounded-[50px] md:items-end md:place-items-baseline place-items-center md:grid-cols-1 grid-cols-2 grid;
+
 		z-index: 100;
-		grid-template-columns: 1fr 1fr;
 
 		&::before {
 			content: '';
@@ -35,7 +35,7 @@
 		}
 
 		.frame {
-			@apply w-[522px] flex flex-col gap-[89px] h-[323px] ml-[58px];
+			@apply w-[522px] flex flex-col gap-[89px] md:gap-[79px] h-[323px] ml-[58px];
 
 			.info {
 				.section-name {
@@ -43,7 +43,7 @@
 				}
 
 				.title {
-					@apply text-[50px] text-[#fff] font-black leading-[65px] text-left;
+					@apply text-[50px] md:text-[40px] md:leading-[52px] md:font-semibold  text-[#fff] font-black leading-[65px] text-left;
 				}
 
 				.description {
@@ -71,6 +71,21 @@
 			.image {
 				width: 580px;
 				aspect-ratio: 1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.container {
+		.banner {
+			.img {
+				.image {
+					width: 396px;
+					position: absolute;
+					bottom: -210px;
+					right: -130px;
+				}
 			}
 		}
 	}
