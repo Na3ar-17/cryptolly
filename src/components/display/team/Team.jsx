@@ -50,16 +50,30 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 					<Card key={i} name={el.name} img={el.img} />
 				))}
 			</div>
-			<img
-				src='/public/images/coins2.png'
-				alt='coins2.png'
-				className={styles.coins}
-			/>
-			<img
-				src='/public/images/bg-gradient.png'
-				alt='bg-gradient.png'
-				className={styles.gradient}
-			/>
+
+			<picture>
+				<source
+					srcSet='/public/images/coins2-md.png'
+					media='(max-width:744px)'
+				/>
+				<img
+					src='/public/images/coins2.png'
+					alt='coins2.png'
+					className={styles.coins}
+				/>
+			</picture>
+
+			<picture>
+				<source
+					srcSet='/public/images/bg-gradient-md.png'
+					media='(max-width:744px)'
+				/>
+				<img
+					src='/public/images/bg-gradient.png'
+					alt='bg-gradient.png'
+					className={styles.gradient}
+				/>
+			</picture>
 		</section>
 	)
 }
