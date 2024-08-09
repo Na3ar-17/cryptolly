@@ -32,6 +32,7 @@ const NavBar = () => {
 								transition: !isOpen
 									? `all 0.${i + 1}s ease-in`
 									: `all 0.${i + 1}s ease-in-out`,
+								transitionDelay: isOpen ? '0.3s' : '0s',
 							}}
 							key={i}
 							className={styles.el}
