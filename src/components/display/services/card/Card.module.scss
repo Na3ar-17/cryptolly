@@ -1,5 +1,5 @@
 .card {
-	@apply w-[380px] relative h-[326px] flex flex-col px-6 py-8 rounded-[25px];
+	@apply w-[380px] md:w-[314px] relative h-[326px] md:h-[260px] flex flex-col px-6 py-8 rounded-[25px];
 	background: linear-gradient(
 			180deg,
 			rgba(41, 46, 75, 0.375) 0%,
@@ -13,16 +13,18 @@
 	.header {
 		@apply flex flex-col items-center;
 		.icon {
+			.image {
+				@apply md:w-[60px];
+			}
 		}
 
 		.title {
-			@apply text-[#fff] text-[32px] mt-2 font-semibold leading-[41.6px] text-center;
+			@apply text-[#fff] text-[32px] md:text-[24px] md:leading-[31.2px] mt-2  font-semibold leading-[41.6px] text-center;
 		}
 	}
 
 	.footer {
-		@apply text-gray-50 text-base font-normal leading-[22.4px] text-center;
-		margin-top: auto;
+		@apply text-gray-50 mt-auto md:mt-5 text-base font-normal leading-[22.4px] text-center;
 	}
 
 	&.tokenCard {

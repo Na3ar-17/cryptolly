@@ -4,10 +4,10 @@
 	}
 
 	.title {
-		@apply text-[50px] text-[#fff] font-black leading-[65px] text-left;
+		@apply text-[50px] md:text-[40px] md:leading-[52px]  text-[#fff] font-black leading-[65px] text-left;
 	}
 
 	.description {
-		@apply text-base mt-6 font-normal text-gray-30 leading-[22.4px] text-left;
+		@apply text-base mt-6 md:mt-3 font-normal text-gray-30 leading-[22.4px] text-left;
 	}
 }
