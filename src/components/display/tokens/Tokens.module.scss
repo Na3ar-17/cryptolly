@@ -1,8 +1,8 @@
 .container {
-	@apply flex flex-col mt-[40px] relative justify-center items-center min-h-screen text-center;
+	@apply flex flex-col mt-[40px] md:mt-[160px] relative justify-center  items-center min-h-screen text-center;
 
 	.cards {
-		@apply flex gap-5 items-center w-[1180px] mt-[100px];
+		@apply flex gap-5 md:gap-8 items-center md:flex-col  w-[1180px] mt-[100px] md:mt-[60px];
 	}
 
 	.coins {
@@ -31,5 +31,23 @@
 		position: absolute;
 		filter: blur(150px);
 		background: linear-gradient(180deg, #2c4982 0%, #2cd095 100%);
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.container {
+		.coins {
+			top: -93px;
+		}
+
+		.gradient {
+			width: 287px;
+			height: 320px;
+			filter: blur(103px);
+		}
+
+		.gradient2 {
+			display: none;
+		}
 	}
 }

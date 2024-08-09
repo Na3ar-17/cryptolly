@@ -21,10 +21,12 @@
 		.title {
 			@apply text-[#fff] text-[32px] md:text-[24px] md:leading-[31.2px] mt-2  font-semibold leading-[41.6px] text-center;
 		}
+		z-index: 100;
 	}
 
 	.footer {
 		@apply text-gray-50 mt-auto md:mt-5 text-base font-normal leading-[22.4px] text-center;
+		z-index: 100;
 	}
 
 	&.tokenCard {
@@ -44,7 +46,7 @@
 			width: 380px;
 			height: 330px;
 			border-radius: 50px;
-			z-index: 100;
+			z-index: 1;
 
 			background: linear-gradient(
 					97.94deg,
@@ -89,13 +91,18 @@
 		}
 
 		.header {
+			.icon {
+				.image {
+					@apply md:w-[72px];
+				}
+			}
 			.title {
-				@apply text-[#E9EEF4] mt-6;
+				@apply text-[#E9EEF4] mt-6 md:text-[32px] md:leading-[41.6px] md:font-semibold;
 			}
 		}
 
 		.footer {
-			@apply text-[#E8E8E8] mt-[18px]  text-base font-normal leading-[22.4px] text-center;
+			@apply text-[#E8E8E8] mt-[18px] md:max-w-[300px] md:mx-auto  text-base font-normal leading-[22.4px] text-center;
 		}
 	}
 }

@@ -27,11 +27,17 @@ aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus`}
 				))}
 				<div className={styles.card}></div>
 			</div>
-			<img
-				src='/public/images/coins.png'
-				alt='coins'
-				className={styles.coins}
-			/>
+			<picture>
+				<source
+					srcSet='/public/images/coins-md.png'
+					media='(max-width:744px)'
+				/>
+				<img
+					src='/public/images/coins.png'
+					alt='coins'
+					className={styles.coins}
+				/>
+			</picture>
 
 			<div className={styles.gradient}></div>
 			<div className={styles.gradient2}></div>
